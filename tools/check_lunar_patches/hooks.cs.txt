@@ -1,0 +1,17 @@
+using Mono.Cecil; using Mono.Cecil.Cil; using System.Linq;
+string R = System.Environment.GetEnvironmentVariable("REPO") ?? System.IO.Path.GetFullPath("../.."); // run from tools/check_lunar_patches
+var r = new DefaultAssemblyResolver(); r.AddSearchDirectory(R + "/libs"); r.AddSearchDirectory(R + "/libs/BepInEx");
+var mm = ModuleDefinition.ReadModule(R + "/libs/BepInEx/MMHOOK_RoR2.dll", new ReaderParameters{AssemblyResolver=r});
+var game = ModuleDefinition.ReadModule(R + "/libs/RoR2.dll", new ReaderParameters{AssemblyResolver=r});
+var src = System.IO.File.ReadAllText(R + "/src/Lunar/LunarRework.cs");
+var uses = System.Text.RegularExpressions.Regex.Matches(src, @"On\.(RoR2(?:\.\w+)*)\.(\w+) \+=").Select(m => (m.Groups[1].Value, m.Groups[2].Value)).Distinct();
+int bad=0;
+foreach (var (t, h) in uses) {
+  var ht = mm.GetTypes().FirstOrDefault(x => x.FullName == "On." + t);
+  var add = ht?.Methods.FirstOrDefault(x => x.Name == "add_" + h);
+  var tok = add?.Body.Instructions.FirstOrDefault(i => i.OpCode == OpCodes.Ldtoken)?.Operand as MethodReference;
+  MethodDefinition res = null; try { var gt = game.GetType(tok.DeclaringType.FullName.Replace('/', '/')); res = gt?.Methods.FirstOrDefault(m => m.Name == tok.Name && m.Parameters.Count == tok.Parameters.Count && m.Parameters.Select(p=>p.ParameterType.FullName).SequenceEqual(tok.Parameters.Select(p=>p.ParameterType.FullName)) && m.ReturnType.FullName == tok.ReturnType.FullName); } catch {}
+  if (res == null) bad++;
+  System.Console.WriteLine((res != null ? "OK   " : "FAIL ") + t + "." + h + "  " + tok?.FullName);
+}
+System.Console.WriteLine(bad==0?"HOOKS OK":bad+" BAD");

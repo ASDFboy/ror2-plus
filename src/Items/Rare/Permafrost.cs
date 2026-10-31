@@ -1,0 +1,132 @@
+﻿using BepInEx.Configuration;
+using ClassicItemsReturns.Modules;
+using R2API;
+using RoR2;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AddressableAssets;
+
+namespace ClassicItemsReturns.Items.Rare
+{
+    public class Permafrost : ItemBase<Permafrost>
+    {
+        public override string ItemName => "Permafrost";
+
+        public override string ItemLangTokenName => "PERMAFROST";
+
+        private float procChancePercentage = 3f;
+
+        public override object[] ItemFullDescriptionParams => new object[]
+        {
+            procChancePercentage
+        };
+
+        public override ItemTier Tier => ItemTier.Tier3;
+
+        public override GameObject ItemModel => LoadItemModel("IceCube");
+
+        public override Sprite ItemIcon => LoadItemSprite("IceCube");
+
+        //This is used to handle boss freezing
+        public bool allowFreezeBoss = false;
+        public static List<BuffDef> ModdedFreezeDebuffs = new List<BuffDef>();
+
+        public override ItemTag[] ItemTags => new ItemTag[]
+        {
+            ItemTag.Utility,
+            ItemTag.AIBlacklist,
+            ItemTag.CanBeTemporary,
+            ItemTag.FoodRelated
+        };
+
+        public override ItemDisplayRuleDict CreateItemDisplayRules()
+        {
+            return new ItemDisplayRuleDict();
+        }
+
+        public override void CreateConfig(ConfigFile config)
+        {
+            allowFreezeBoss = config.Bind(ConfigCategory, "Freeze Bosses", false, "Allow this item to freeze bosses.").Value;
+        }
+
+        protected override void CreateCraftableDef()
+        {
+            if (!ItemDef) return;
+            CraftableDef toFrostRelic = ScriptableObject.CreateInstance<CraftableDef>();
+            toFrostRelic.pickup = Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/Icicle/Icicle.asset").WaitForCompletion();
+            toFrostRelic.recipes = new Recipe[]
+            {
+                new Recipe()
+                {
+                    amountToDrop = 1,
+                    ingredients = new RecipeIngredient[]
+                    {
+                        new RecipeIngredient()
+                        {
+                            pickup = Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/NearbyDamageBonus/NearbyDamageBonus.asset").WaitForCompletion()
+                        },
+                        new RecipeIngredient()
+                        {
+                            pickup = ItemDef
+                        }
+                    }
+                }
+            };
+            PluginContentPack.craftableDefs.Add(toFrostRelic);
+        }
+
+        public override void Hooks()
+        {
+            RoR2Application.onLoad += GetModdedFreezeDebuffs;
+            On.RoR2.SetStateOnHurt.OnTakeDamageServer += SetStateOnHurt_OnTakeDamageServer;
+        }
+
+        private void SetStateOnHurt_OnTakeDamageServer(On.RoR2.SetStateOnHurt.orig_OnTakeDamageServer orig, SetStateOnHurt self, DamageReport damageReport)
+        {
+            orig(self, damageReport);
+
+            if (!self.targetStateMachine || !self.spawnedOverNetwork || damageReport.damageInfo.procCoefficient <= 0f || !damageReport.attackerMaster || !damageReport.attackerMaster.inventory) return;
+
+            DamageInfo damageInfo = damageReport.damageInfo;
+            Inventory attackerInventory = damageReport.attackerMaster.inventory;
+
+            int itemCount = attackerInventory.GetItemCountEffective(ItemDef);
+            if (itemCount <= 0) return;
+
+            if (!Util.CheckRoll(procChancePercentage * itemCount, damageReport.attackerMaster) && !damageInfo.procChainMask.HasProc(ProcType.SureProc)) return;
+
+            float duration = 2f * damageReport.damageInfo.procCoefficient;
+
+            if (self.canBeFrozen && (!damageReport.victimIsChampion || allowFreezeBoss))
+            {
+                self.SetFrozen(duration);
+            }
+            else if (damageReport.victimBody)
+            {
+                var body = damageReport.victimBody;
+                bool notFreezeImmune = !body.HasBuff(DLC2Content.Buffs.FreezeImmune);
+                bool notFrozen = !(body.healthComponent && body.healthComponent.isInFrozenState);
+
+                if (notFreezeImmune && notFrozen && !body.IsDrone)
+                {
+                    foreach (var buff in ModdedFreezeDebuffs)
+                    {
+                        damageReport.victimBody.AddTimedBuff(buff, duration);
+                    }
+                }
+            }
+        }
+
+        private void GetModdedFreezeDebuffs()
+        {
+            if (ModSupport.ModCompatRiskyMod.loaded)
+            {
+                var buffDef = ModSupport.ModCompatRiskyMod.GetFreezeDebuff();
+                if (buffDef)
+                {
+                    ModdedFreezeDebuffs.Add(buffDef);
+                }
+            }
+        }
+    }
+}
