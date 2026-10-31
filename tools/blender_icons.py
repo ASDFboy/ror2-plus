@@ -780,6 +780,160 @@ def CaptainsBrooch():
         p.append(S(0.035, (0.5 * math.cos(a), -0.07, 0.2 + 0.5 * math.sin(a)), 'brass'))
     G(p, (5, 0, 12))
 
+# ---------------------------------------------------------------- third-pass redesigns (review of Oct 2026)
+# The weakest icons/models from a side-by-side with vanilla: thin silhouettes, too little mass, or a shape that
+# didn't read as the item. Each keeps its idea but gets a chunkier, more readable build.
+PAL.update({'rotskin': ('#8f9468', {'grime': 0.35}), 'rotskin2': ('#6a7248', {'grime': 0.3}), 'leechback': ('#3e1a22', {}),
+            'leechbelly': ('#8a4048', {}), 'hazard': ('#d8b030', {'wear': 0.4})})
+
+def Prism(pts, depth, loc=(0, 0, 0), rot=(0, 0, 0), m='metal', bev=0.03):
+    """A flat 2D outline (x, z points) extruded `depth` along y, with bevelled edges."""
+    me = bpy.data.meshes.new('prism'); bm = bmesh.new()
+    vs = [bm.verts.new((x, -depth / 2, z)) for x, z in pts]; f = bm.faces.new(vs)
+    bmesh.ops.recalc_face_normals(bm, faces=[f])
+    ext = bmesh.ops.extrude_face_region(bm, geom=[f]); nv = [g for g in ext['geom'] if isinstance(g, bmesh.types.BMVert)]
+    bmesh.ops.translate(bm, vec=(0, depth, 0), verts=nv); bmesh.ops.recalc_face_normals(bm, faces=bm.faces[:])
+    bm.to_mesh(me); bm.free()
+    o = bpy.data.objects.new('prism', me); bpy.context.scene.collection.objects.link(o)
+    o.location = loc; o.rotation_euler = tuple(D(a) for a in rot); o.data.materials.append(M(m))
+    if bev:
+        b = o.modifiers.new('b', 'BEVEL'); b.width = bev; b.segments = 3; b.limit_method = 'ANGLE'
+    return o
+
+@item
+def LegendarySpark():
+    """A thick, chunky lightning bolt with a white-hot core, torn loose from an Overloading Worm's armour."""
+    bolt = [(-0.12, 1.08), (0.6, 1.08), (0.16, 0.26), (0.58, 0.26), (-0.4, -1.12), (-0.04, -0.08), (-0.48, -0.08)]
+    core = [(x * 0.62 + 0.04, z * 0.7) for x, z in bolt]
+    p = [Prism(bolt, 0.26, m='gyellow', bev=0.05), Prism(core, 0.06, (0, -0.14, 0), m='gwhite', bev=0.015)]
+    # a broken plate of worm armour the bolt bursts out of
+    p += [Blob(0.42, (0.05, 0.12, -0.05), (1.3, 0.55, 0.7), 'navy', amt=0.08, seed=4), T(0.5, 0.06, (0.05, 0.05, -0.05), (90, 0, 0), 'steel')]
+    for k, (a, L) in enumerate(((0.6, 0.55), (2.4, 0.5), (3.8, 0.45), (5.3, 0.5))):
+        st = (0.45 * math.cos(a), -0.05, 0.45 * math.sin(a) * 0.8)
+        en = (st[0] + L * math.cos(a), -0.12, st[2] + L * math.sin(a) * 0.8)
+        p.append(Tu(zigzag(st, en, 4, 0.09, seed=k + 21), 0.035, 'gyellow', taper=[1.2, 1, 0.8, 0.6, 0.3]))
+    for loc in ((-0.75, -0.1, 0.7), (0.85, -0.1, -0.55), (-0.85, -0.1, -0.35)): p.append(Gem(0.07, loc, 'gwhite', (1, 1, 1.2)))
+    G(p, (8, 0, -12))
+
+@item
+def PlasmaChain():
+    """Four heavy links ending in a crackling plasma orb held by a clamp."""
+    p = []
+    for i in range(4):
+        x = -0.95 + i * 0.44; z = -0.55 + i * 0.3
+        p.append(T(0.3, 0.1, (x, 0, z), (0 if i % 2 else 90, 0, -34), 'steel' if i % 2 else 'metal'))
+    p += [C(0.24, 0.22, (0.82, 0, 0.62), (0, 56, 0), 'dark', bev=0.04), T(0.25, 0.05, (0.82, 0, 0.62), (0, 56, 0), 'brass'),
+          S(0.36, (1.02, -0.02, 0.86), 'gcyan'), S(0.2, (1.02, -0.12, 0.86), 'gwhite')]
+    for k in range(5):
+        a = k * 1.25
+        p.append(Tu(zigzag((1.02, -0.05, 0.86), (1.02 + 0.65 * math.cos(a), -0.15, 0.86 + 0.65 * math.sin(a)), 4, 0.08, seed=k + 3), 0.03, 'gcyan', taper=[1.2, 1, 0.8, 0.6, 0.3]))
+    for i in range(3):
+        a = (-0.95 + i * 0.44, -0.12, -0.55 + i * 0.3); b = (a[0] + 0.44, -0.12, a[2] + 0.3)
+        p.append(Tu(zigzag(a, b, 3, 0.07, seed=i + 40), 0.02, 'gcyan'))
+    G(p, (0, 0, -5))
+
+@item
+def ToxicCentipede():
+    """A plated centipede rearing up to strike, poison glowing between its plates."""
+    pts = [(-0.95 + 0.27 * i, 0.1 * math.sin(i * 0.8), -0.55 + 0.03 * i * i) for i in range(8)]
+    p = []
+    for i, (x, y, z) in enumerate(pts):
+        r = 0.17 + 0.012 * i
+        p.append(S(r, (x, y, z), 'chitin2', (1.05, 1.0, 0.9)))
+        p.append(S(r * 1.02, (x, y, z + r * 0.35), 'chitin', (1.1, 1.05, 0.55)))     # back plate
+        p.append(S(r * 0.35, (x, y - r * 0.85, z + r * 0.15), 'ggreen'))            # poison sac on the side facing us
+        for sgn in (-1, 1):
+            p.append(Tu([(x, y + sgn * r * 0.6, z - r * 0.3), (x + 0.05, y + sgn * (r + 0.22), z - 0.05), (x + 0.12, y + sgn * (r + 0.3), z - 0.4)], 0.035, 'chitin2', taper=[1, 0.8, 0.4]))
+    hx, hy, hz = pts[-1]
+    p += [S(0.27, (hx + 0.22, hy, hz + 0.18), 'chitin', (1.15, 1, 0.9)), S(0.07, (hx + 0.33, hy - 0.2, hz + 0.3), 'gyellow'), S(0.07, (hx + 0.33, hy + 0.2, hz + 0.3), 'gyellow')]
+    for sgn in (-1, 1):
+        p.append(Tu([(hx + 0.4, hy + sgn * 0.12, hz + 0.08), (hx + 0.6, hy + sgn * 0.2, hz - 0.02), (hx + 0.62, hy + sgn * 0.06, hz - 0.15)], 0.045, 'darkred', taper=[1, 0.7, 0.2]))
+        p.append(Tu([(hx + 0.3, hy + sgn * 0.1, hz + 0.4), (hx + 0.5, hy + sgn * 0.3, hz + 0.75), (hx + 0.75, hy + sgn * 0.35, hz + 0.85)], 0.022, 'chitin2', taper=[1, 0.6, 0.2]))
+    p.append(Tu([(hx + 0.6, hy, hz - 0.15), (hx + 0.62, hy - 0.02, hz - 0.35)], 0.025, 'ggreen', taper=[1, 0.3]))
+    G(p, (12, 0, 8))
+
+@item
+def DeadMansFoot():
+    """A severed, rotting foot with poison blisters and a bone poking out of the stump."""
+    p = [Blob(0.4, (0.0, 0, -0.45), (1.75, 0.85, 0.55), 'rotskin', amt=0.05, seed=2),                 # sole and arch
+         Blob(0.3, (-0.5, 0, -0.25), (1.0, 0.95, 1.05), 'rotskin', amt=0.05, seed=3),                 # heel
+         C(0.3, 0.8, (-0.45, 0, 0.25), m='rotskin2', bev=0.08),                                        # ankle
+         C(0.29, 0.06, (-0.45, 0, 0.66), m='flesh', bev=0.02), C(0.2, 0.05, (-0.45, 0, 0.68), m='darkred', bev=0.01),
+         C(0.09, 0.35, (-0.42, 0, 0.82), m='bone'), S(0.12, (-0.42, 0, 1.0), 'bone', (1.2, 1, 0.8))]
+    for k, (y, r) in enumerate(((-0.26, 0.14), (-0.09, 0.12), (0.06, 0.11), (0.19, 0.1), (0.3, 0.09))):
+        x = 0.66 - 0.07 * k
+        p += [S(r, (x, y, -0.48), 'rotskin', (1.5, 1, 0.95)), S(r * 0.6, (x + r * 1.0, y, -0.4), 'cream', (0.7, 0.9, 0.35)),
+              Tu([(x - r * 1.2, y, -0.4), (x - r * 0.6, y, -0.36)], 0.012, 'rotskin2')]
+    for loc, r in (((-0.2, -0.33, -0.25), 0.11), ((0.25, -0.34, -0.4), 0.09), ((-0.45, -0.3, 0.2), 0.08), ((-0.62, -0.25, -0.35), 0.07)):
+        p.append(Blob(r, loc, (1, 0.6, 1.1), 'ggreen', amt=0.03))
+    p.append(Tu([(0.25, -0.34, -0.48), (0.27, -0.35, -0.72), (0.26, -0.33, -0.86)], 0.035, 'ggreen', taper=[1, 0.7, 0.4]))
+    p.append(S(0.06, (0.26, -0.33, -0.92), 'ggreen', (1, 1, 1.3)))
+    G(p, (28, 0, 28))
+
+@item
+def PanicMines():
+    """A spiked, domed proximity mine with a hazard band and a red sensor, a second one tumbling behind it."""
+    def mine(cx, cz, s, rot):
+        q = [C(0.55 * s, 0.18 * s, (0, 0, 0), m='dark', bev=0.05), S(0.45 * s, (0, 0, 0.08 * s), 'olive', (1, 1, 0.55)),
+             C(0.13 * s, 0.12 * s, (0, 0, 0.32 * s), m='steel', bev=0.02), S(0.09 * s, (0, 0, 0.4 * s), 'gred')]
+        for k in range(12):
+            a = k / 12 * 2 * math.pi
+            q.append(B((0.12 * s, 0.05 * s, 0.07 * s), (0.56 * s * math.cos(a), 0.56 * s * math.sin(a), 0.0), (0, 0, math.degrees(a) + 90), 'hazard' if k % 2 else 'black', bev=0.005))
+        for k in range(6):
+            a = k / 6 * 2 * math.pi + 0.26
+            o = K(0.06 * s, 0.0, 0.22 * s, (0.36 * s * math.cos(a), 0.36 * s * math.sin(a), 0.24 * s), m='steel', v=8)
+            o.rotation_euler = (D(35) * -math.sin(a), D(35) * math.cos(a), 0); q.append(o)
+        return G(q, rot, (cx, 0, cz))
+    mine(0.48, -0.2, 0.7, (55, 30, -20)); mine(-0.2, 0.1, 1.0, (38, 0, 10))
+    bpy.context.view_layer.update()
+
+@item
+def SuperMassiveLeech():
+    """A fat, curled, banded leech rearing its toothed sucker at you."""
+    pts = [(-0.85, 0.1, -0.55), (-0.75, 0.05, 0.1), (-0.3, 0.0, 0.55), (0.25, -0.1, 0.6), (0.5, -0.5, 0.3)]
+    p = [Tu(pts, 0.36, 'leechback', taper=[0.55, 0.85, 1.0, 0.95, 0.8])]
+    for i in range(1, 10):
+        t = i / 10; seg = min(int(t * 4), 3); f = t * 4 - seg
+        a, b = Vector(pts[seg]), Vector(pts[seg + 1]); c = a.lerp(b, f); d = (b - a).normalized()
+        o = T(0.34 * (0.6 + 0.4 * math.sin(t * math.pi)), 0.05, tuple(c), (0, 0, 0), 'leechbelly' if i % 2 else 'burgundy')
+        o.rotation_euler = d.to_track_quat('Z', 'Y').to_euler(); p.append(o)
+    hx, hy, hz = pts[-1]; d = (Vector(pts[-1]) - Vector(pts[-2])).normalized(); hc = Vector(pts[-1]) + d * 0.18
+    disc = C(0.3, 0.12, tuple(hc), m='pink', bev=0.04); disc.rotation_euler = d.to_track_quat('Z', 'Y').to_euler(); p.append(disc)
+    mouth = S(0.2, tuple(hc + d * 0.05), 'black', (1, 1, 0.35)); mouth.rotation_euler = disc.rotation_euler; p.append(mouth)
+    side = d.cross(Vector((0, 1, 0))).normalized(); up = side.cross(d).normalized()
+    for k in range(10):
+        a = k / 10 * 2 * math.pi; q = hc + d * 0.07 + (side * math.cos(a) + up * math.sin(a)) * 0.2
+        o = K(0.035, 0.0, 0.12, tuple(q), m='bone', v=6); o.rotation_euler = (-(side * math.cos(a) + up * math.sin(a)) + d * 0.6).normalized().to_track_quat('Z', 'Y').to_euler(); p.append(o)
+    tail = Vector(pts[0]); p.append(C(0.15, 0.08, tuple(tail + Vector((0, 0, -0.05))), m='pink', bev=0.02))
+    for loc in ((-0.4, -0.33, 0.45), (0.1, -0.38, 0.62), (-0.7, -0.3, -0.1)): p.append(S(0.045, loc, 'darkred'))
+    G(p, (8, 0, 18))
+
+@item
+def UnstableWatch():
+    """Pocket watch with its face, hands and markers raised clear of the case (the old flush face baked dark)."""
+    p = [C(0.62, 0.16, (0, 0, 0), (90, 0, 0), 'gold'), T(0.6, 0.05, (0, -0.09, 0), (90, 0, 0), 'brass'), C(0.55, 0.03, (0, -0.1, 0), (90, 0, 0), 'cream', bev=0.0),
+         C(0.05, 0.06, (0, -0.13, 0), (90, 0, 0), 'black'), B((0.045, 0.03, 0.38), (0, -0.13, 0.17), m='black', bev=0.0), B((0.045, 0.03, 0.28), (0.12, -0.13, -0.06), (0, -60, 0), 'black', bev=0.0),
+         C(0.1, 0.15, (0, 0, 0.7), m='gold'), T(0.12, 0.035, (0, 0, 0.88), (90, 0, 0), 'gold')]
+    for k in range(12):
+        a = k / 12 * 2 * math.pi
+        p.append(B((0.035, 0.03, 0.08 if k % 3 else 0.12), (0.45 * math.cos(a), -0.12, 0.45 * math.sin(a)), (0, -math.degrees(a) + 90, 0), 'black', bev=0.0))
+    for k in range(4): p.append(T(0.07, 0.02, (0.15 + 0.12 * k, 0.05, 0.95 - 0.14 * k), (90, 0, 45 * k), 'brass'))
+    for loc, rot in (((-0.7, -0.1, 0.3), (10, 40, 0)), ((-0.6, -0.2, -0.4), (40, 10, 30)), ((0.72, -0.15, -0.25), (20, -30, 10))): p.append(B((0.12, 0.03, 0.18), loc, rot, 'gcyan', bev=0.0))
+    G(p, (5, 0, 15))
+
+@item
+def CrudelyDrawnBuddy():
+    """Same cut-out buddy, but thick cardboard instead of paper-thin card so the model bakes the right colour."""
+    t = 0.12
+    p = [S(0.32, (0, 0, 0.62), 'paper', (1, 0.3, 1)), B((0.5, t, 0.65), (0, 0, 0.0), m='paper', bev=0.04),
+         B((0.14, t, 0.55), (-0.38, 0, 0.12), (0, 35, 0), 'paper', bev=0.04), B((0.14, t, 0.55), (0.38, 0, 0.0), (0, -50, 0), 'paper', bev=0.04),
+         B((0.16, t, 0.55), (-0.14, 0, -0.55), (0, 8, 0), 'paper', bev=0.04), B((0.16, t, 0.55), (0.16, 0, -0.55), (0, -8, 0), 'paper', bev=0.04),
+         S(0.045, (-0.1, -0.1, 0.68), 'black'), S(0.045, (0.11, -0.1, 0.66), 'black'),
+         Tu([(-0.12, -0.1, 0.52), (0.0, -0.1, 0.48), (0.13, -0.1, 0.53)], 0.018, 'black'),
+         Tu([(-0.15, -0.07, 0.2), (0.15, -0.07, -0.1)], 0.02, 'red'), Tu([(0.15, -0.07, 0.2), (-0.12, -0.07, -0.12)], 0.02, 'blue'),
+         B((0.1, 0.3, 0.06), (0, 0.15, -0.9), m='wood', bev=0.02)]
+    G(p, (5, 0, 12))
+
 # ---------------------------------------------------------------- void generator
 VOIDCOLS = {1: 'vpale', 2: 'gpink', 3: 'gpurple'}
 
