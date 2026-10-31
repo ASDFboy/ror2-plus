@@ -1,0 +1,608 @@
+## MeatNugget
+<style=cMono>Order: "Emergency Rations (Vacuum Sealed)"
+Tracking Number: 118*****
+Estimated Delivery: 04/02/2056
+Shipping Method: Standard
+Shipping Address: Mess Hall 3, UES Wayfarer
+Shipping Details:</style>
+
+I know what the label says. Ignore the label. The supplier swore these were "protein-forward" and "shelf stable for the life of the vessel," and so far only the second part has held up.
+
+They don't spoil. I left one on the counter for a week as a test and it looked better on day seven than on day one. Bryce ate it anyway and said his bad knee stopped hurting.
+
+Send two more crates. Don't tell the crew what they are. I certainly don't know.
+
+## Taser
+<style=cMono>Audio transcription, Security Checkpoint 4, recovered from body camera.</style>
+
+"Ma'am, step back from the console."
+
+"I'm the chief engineer. I'm allowed to touch the console."
+
+"Ma'am, the console is on fire."
+
+"It's supposed to do that."
+
+"It's — no it isn't. Step back or I'll—"
+
+[Crackle. A thud. Several seconds of silence.]
+
+"...Okay. Okay, she's fine. She's breathing. Somebody get the extinguisher. And somebody write down that it was on fire before I got here."
+
+## Spikestrip
+<style=cMono>Field notes, Outpost Delta perimeter, day 12.</style>
+
+The things in the tall grass don't come at us head-on anymore. They've learned. They wait for one of us to wander off, then they run us down from behind.
+
+So I stopped running clean. Every time I bolt I kick a handful of the old road-spikes out of my pack. Whatever's chasing me has to slow down or lose its feet.
+
+It isn't elegant. Last night I heard one of them screaming in the dark for an hour. I slept fine.
+
+## HermitsScarf
+<style=cMono>Order: "Hand-Knit Scarf (Grey)"
+Tracking Number: 220*****
+Estimated Delivery: 11/19/2056
+Shipping Method: Standard
+Shipping Address: P.O. Box 9, Cliffside Hermitage, Earth
+Shipping Details:</style>
+
+You asked me once how I lived so long up here alone, with the rockslides and the wolves and the tax collectors. I told you I was lucky. That was a lie.
+
+I was never lucky. I was quiet. I learned to stand where the rock was going to miss and to step aside the moment the wind changed.
+
+This scarf has been with me through all of it. I hope it teaches you the same thing: the best way through trouble is not to be there when it arrives.
+
+## BarbedWire
+<style=cMono>Requisition denial, Colony Logistics Office.</style>
+
+Request #4471 (eighty meters of military-grade concertina wire, "for the garden") is DENIED.
+
+We understand the garden has a pest problem. We understand the pests are "the size of a cow" and "smarter than they look." Colony bylaws still forbid fortifying private plots.
+
+Note: a second unit of wire was found wrapped around the requester's armor during inspection. The requester described this as "a fashion choice." Inspector Haldane described it as "deeply upsetting to hug." No further action taken.
+
+## VoltaicMitt
+<style=cMono>Lab notes, Atmospheric Discharge Glove, prototype 3.</style>
+
+The mitt only builds charge when the wearer is off the ground. Something about the grounding loop. On the floor it's an expensive oven mitt.
+
+In the air it's something else. Test subject Kowalski jumped off the lab bench and the overhead lights died, the coffee boiled, and every hair on the room's heads stood straight up.
+
+Next step: ask Kowalski to jump more. Kowalski has asked for a transfer.
+
+## TimeKeepersSecret
+<style=cMono>Inscription, inside the lid of an antique pocket watch.</style>
+
+To my apprentice —
+
+You were always frightened of running out of time. You worked too fast, you slept too little, and you panicked when the deadlines came.
+
+This was my master's, and her master's before that. I will not tell you how it works because I do not know. I will tell you only this: when the moment comes that you think you have none left, open it.
+
+You will find you have a little more than you thought. Use it well. It does not come back.
+
+## ChargefieldGenerator
+<style=cMono>Order: "Portable Capacitive Field Unit"
+Tracking Number: 402*****
+Estimated Delivery: 06/07/2056
+Shipping Method: Fragile / Hazardous
+Shipping Address: Mining Site 12, Titan
+Shipping Details:</style>
+
+The unit soaks up the stray discharge from anything that dies near it. Don't ask me why dying things discharge. Out there, they just do.
+
+Once it's fed it pushes the charge outward in a ring that keeps growing as long as you keep feeding it. Keep your crew inside the ring and everything else outside it.
+
+And please, for the love of all that is good, do not install it in the break room again.
+
+## ConcussionGrenade
+<style=cMono>Training manual, Section 8: Non-Lethal Ordnance.</style>
+
+The M-40 concussion charge is designed to disorient, not to kill. Its blast is loud, bright, and brief. Targets inside the radius are expected to drop whatever they're holding and reconsider their life choices.
+
+Note: field reports indicate the M-40 does not work as designed on large native fauna. The fauna are disoriented, yes. They are also extremely angry.
+
+Instructors are reminded to emphasize the word "non-lethal" refers to the grenade and not to the situation.
+
+## DeadMansFoot
+<style=cMono>Audio transcription, Salvage Crew 9, Derelict Freighter "Tilly."</style>
+
+"Found him. Down by the cargo hold."
+
+"Dead?"
+
+"Very. Been here a while. Got his foot caught in his own tripwire. Poison canister went off right under him."
+
+"So why are you whispering?"
+
+"Because the tripwire's still set and I'm standing on it."
+
+"...Don't move."
+
+"Wasn't planning on it."
+
+[Long pause.]
+
+"Is it bad that I kind of want to keep it?"
+
+## PanicMines
+<style=cMono>Personal log, Private First Class R. Odenkirk.</style>
+
+Drill sergeant says I panic too much. Says when things get bad I drop everything and run.
+
+Fine. If I'm going to drop everything, I might as well drop something useful. I've rigged the pack so when I'm badly hurt it spits out mines as I go.
+
+Sarge says it's the dumbest thing she's ever seen. Sarge also hasn't been chased by a wandering vagrant. I'm keeping it.
+
+## ProphetsCape
+<style=cMono>Translated temple inscription, partially weathered.</style>
+
+The prophet walked into the storm of arrows with only her cloak.
+
+The arrows struck the cloth and fell. The faithful said it was her holiness that turned them aside. The skeptics said it was a very good cloak.
+
+Both were right, she told them. Holiness is just the habit of being ready for the next blow. And the cloak was very good. She had it made by her sister.
+
+## Insecticide
+<style=cMono>Order: "Industrial Pest Control Concentrate (x6)"
+Tracking Number: 505*****
+Estimated Delivery: 02/28/2056
+Shipping Method: Hazardous Materials
+Shipping Address: Hydroponics Wing, Colony Ship Perseverance
+Shipping Details:</style>
+
+The beetles are back and they've learned to chew through the seals. Standard spray just makes them slippery.
+
+This concentrate is military surplus. It stacks: every dose makes the next one hit harder, and they do not shake it off. As a bonus, the cleanup crew reports that the plants grow better in the soil afterward.
+
+I don't want to know what that means about the beetles. Please spray responsibly.
+
+## DecayingSample
+<style=cMono>Lab dissection analysis, Specimen 41-C.</style>
+
+The sample continues to orbit its container without any apparent means of propulsion. Two lobes, roughly the size of a fist, circling each other and anything else nearby.
+
+When a second specimen was introduced, the lobes struck it repeatedly until it stopped moving. They then resumed orbit as if nothing had happened.
+
+Recommend we stop calling it "decaying." It has gained mass every day since collection. Recommend we stop introducing second specimens.
+
+## FilialImprinting
+<style=cMono>Field notes, Xenobiology Survey Team.</style>
+
+The egg hatched in my pack on the way back to camp. The creature inside imprinted on me immediately and has not left my side since.
+
+It's helpful, in an odd way. Every so often it wanders off and comes back carrying something: a berry that makes me run faster, a resin that closes cuts, a seed that makes my hands steady.
+
+The team wants it in a cage for study. I've told them no. It's not a specimen. It's family now.
+
+## ToxicCentipede
+<style=cMono>Warning label, translated from the exporter's language.</style>
+
+THIS CREATURE IS NOT A PET.
+
+THIS CREATURE IS NOT A SNACK.
+
+The centipede will attach itself to the nearest warm body and inject a slow poison. When the host dies, the centipede will move to the next warm body.
+
+If you are reading this label, the centipede is already out of the box. We are sorry. Please stay away from your friends.
+
+## OldBox
+<style=cMono>Audio transcription, Fishing Trawler "Lucky Mae."</style>
+
+"Pulled it up in the net with the cod. Old wooden box, iron bands, real heavy."
+
+"What's inside?"
+
+"Dunno. Every time I go to open it, something scares me half to death and the lid pops open by itself."
+
+"What scares you?"
+
+"Last time it was a seagull. Time before that, Gary."
+
+"I said I was sorry, Captain."
+
+"Anyway — every time it pops, the things that scared me end up running off terrified. So now I keep it by the bunk."
+
+## BeatingEmbryo
+<style=cMono>Lab dissection analysis, Specimen 112-B.</style>
+
+The embryo is roughly four centimeters long and its heart rate has never dropped below 300 beats per minute. It does not grow. It does not age. It does not seem to need to eat.
+
+When placed beside any active machinery, the machinery begins cycling twice as often. Dr. Ames claims she watched a coffee maker brew two pots at once.
+
+We will need a second coffee maker for the control group. We will also need Dr. Ames to stop bringing the specimen to the break room.
+
+## AtgMk2
+<style=cMono>Order: "AtG Viper Missile, Mark II (Field Kit)"
+Tracking Number: 601*****
+Estimated Delivery: 09/09/2056
+Shipping Method: Military Freight
+Shipping Address: Firebase Honey, Southern Ridge
+Shipping Details:</style>
+
+The Mk. 1 was a fine piece of hardware but your squad's feedback was very clear: "one missile is not enough missiles."
+
+We listened. The Mark II fires three. They're smaller and they share the guidance package, but our trials show that nobody complains about the size of the missiles once the second and third ones arrive.
+
+Please return any unused Mark I units. Please stop sending us thank-you notes written in scorch marks.
+
+## PlasmaChain
+<style=cMono>Experimental weapons log, entry 31.</style>
+
+The chain doesn't fire. It latches. The tether forms a plasma line between the gun and the target, and anything that crosses that line burns.
+
+Field trial: the operator tagged a large beetle and ran. Four smaller beetles between them were cooked before the big one even turned around.
+
+Notes for revision: tether is lethal to anyone, including the operator's own team, who cross it carelessly. Training should include "do not walk through the chain." Training should include it twice.
+
+## HeavenCracker
+<style=cMono>Audio transcription, Armory Demo Day.</style>
+
+"Every fourth pull, the drill charges. It's not a normal round. It goes through things."
+
+"What kind of things?"
+
+"Targets. Walls. The next target. The wall behind that. Most of a parked truck."
+
+"Is that safe?"
+
+"It's very safe if you're the one holding it."
+
+"Who named it Heaven Cracker?"
+
+"The guy who was standing behind the truck."
+
+## RapidMitosis
+<style=cMono>Lab notes, Cellular Acceleration Trial 6.</style>
+
+The culture divides faster than anything in our records. When we ran a current through the growth chamber, the chamber's own systems began recovering from the load faster, too.
+
+We've rigged a pouch of the culture onto a standard field equipment harness. The equipment recharges in a fraction of the usual time, and the soldier's other gear seems to wake up a little every time it fires.
+
+Side effects include fingernails growing visibly over the course of a meeting. We are told this is "not a big deal."
+
+## RepulsionArmor
+<style=cMono>Order: "Kinetic Feedback Plating"
+Tracking Number: 707*****
+Estimated Delivery: 12/12/2056
+Shipping Method: Priority
+Shipping Address: Arena Grounds, Holding Cell 2, Venus Orbital
+Shipping Details:</style>
+
+Your last letter said you weren't sure you'd survive the next fight. So I spent everything I had on this.
+
+The plates store the force of each hit. After enough of them, they release it all back the way it came, and lock up hard for a few seconds after.
+
+Take a few hits on purpose, love. Let them think they're winning. Then show them what happens when the armor's full.
+
+## LaserTurbine
+<style=cMono>Engineering notes, Turbine Assembly 9.</style>
+
+Every motion of the operator's arms spins the turbine a little faster. Reloading, swinging, firing, all of it feeds the rotor.
+
+When the rotor reaches full speed, the stored energy discharges as a single, very large beam. We have not yet found a material it cannot cut.
+
+Note for the safety committee: please stop scheduling the demo directly in front of the facility's only window. We have now replaced it three times.
+
+## OlLopper
+<style=cMono>Audio transcription, Old Pete's Saloon, Venus Colony.</style>
+
+"See that axe on the wall?"
+
+"Yeah."
+
+"That's the Ol' Lopper. My granddad used it to clear the first settlement. Trees, rocks, a few things that came out of the trees."
+
+"Is it sharp?"
+
+"It's sharper the more you've already hit something. Hit a thing once, it hurts. Hit it again, the Lopper starts to smell blood, and it bites deeper."
+
+"That's not how axes work."
+
+"That's not how normal axes work."
+
+## PhotonJetpack
+<style=cMono>Flight log, Test Pilot Amira Duval.</style>
+
+Day 1: Pack activates on a long press of jump. Lifted three meters. Hovered. Landed. Clean.
+
+Day 3: Found the fuel recharges while on the ground. Lifted ten meters. Saw the whole compound.
+
+Day 9: Stayed up for nearly a minute. Waved at the observers. They waved back with considerably less enthusiasm.
+
+Day 10: I've been told to stop "doing laps around the radio tower." I have not been told to stop flying. I will not be stopping flying.
+
+## TelescopicSight
+<style=cMono>Order: "Long-Range Precision Optic"
+Tracking Number: 803*****
+Estimated Delivery: 05/05/2056
+Shipping Method: Insured
+Shipping Address: Sniper Nest Charlie, Old Lighthouse
+Shipping Details:</style>
+
+You asked for the best scope money can buy. This isn't it. This is better.
+
+Through the lens, you'll see a faint mark on whatever you're aiming at, right where it can't afford to be hit. It doesn't always show up. When it does, take the shot and don't look back.
+
+We don't know how it works. The craftsman who made it is long gone and he left no notes. Only a single line, carved into the housing: "Breathe out."
+
+## FiremansBoots
+<style=cMono>Fire Department of Grey Harbor, retirement ceremony transcript.</style>
+
+"Thirty years Chief Hollis ran into burning buildings so the rest of us didn't have to."
+
+[Applause.]
+
+"Thirty years he came out with a kid under one arm and a cat under the other. And in thirty years, those boots never once caught fire."
+
+"They did catch everything else on fire, Chief."
+
+"They did catch everything else on fire. We don't talk about the warehouse."
+
+[Laughter. More applause.]
+
+## AncientScepter
+<style=cMono>Translated temple inscription, the Hall of Kings.</style>
+
+The scepter does not make a king. The scepter makes a king's best deed greater.
+
+Each ruler who held it found that their single greatest gift, the thing they were born to do, was magnified beyond reason. The general's charge became a storm. The healer's touch became a flood.
+
+The cruel rulers found the same. That is why the scepter was buried, and why this inscription ends with a warning: know your greatest gift before you lift it.
+
+## Umbrella
+<style=cMono>Order: "Umbrella (Striped, Reinforced)"
+Tracking Number: 9*******
+Estimated Delivery: 08/18/2056
+Shipping Method: Standard
+Shipping Address: Teleporter Maintenance Hut, Distant Roost
+Shipping Details:</style>
+
+Every time you start one of those big machines up, the sky over it goes wrong. You've told me about the red storms and the things that come down with them.
+
+So here's an umbrella. A good one. Strong frame, wide canopy. The man at the shop said it was "rated for any weather." I asked him if that included the kind of weather that bites.
+
+He said it did. Then he said I should probably not mention it to anyone else. I'm mentioning it to you.
+
+## LegendarySpark
+<style=cMono>Field notes, Storm-Chasing Expedition, Distant Roost.</style>
+
+We followed the lightning to the top of the cliffs and found a small, crackling light hovering in the air where the last bolt struck.
+
+It's alive. I'm certain of it. It follows whoever carries it and lashes out at anything that harms them, striking down from the sky in the shape of the storm that birthed it.
+
+The locals call it a "spark of the old storm." They say it was here before the people were, and will be here after. I believe them.
+
+## ImpTentacle
+<style=cMono>Lab dissection analysis, Specimen IO-1.</style>
+
+Severed from a large, crimson entity encountered near a rift. The tissue remains active long after separation and reaches toward any living creature nearby.
+
+When a carrier is wounded, the tentacle pulls a portion of its strength from the attacker and gives it to the carrier as a crimson shield. It does not distinguish between ally and enemy for this purpose. It simply wants its host alive.
+
+Recommend we keep the specimen sedated. Recommend we never meet whatever it was originally attached to.
+
+## BurningWitness
+<style=cMono>Audio transcription, recovered from a melted helmet camera.</style>
+
+"Big worm down! Big worm's down!"
+
+"Look at its eye. It's still glowing."
+
+"Don't touch it."
+
+"I'm just going to—"
+
+[A rushing sound. Heat distortion in the image.]
+
+"...Okay. Okay, it's in my pack. It's warm. Every time I take something down, I can feel it get hungrier."
+
+"Are your boots on fire?"
+
+"They are. I'm going faster, though. Is that bad?"
+
+## IfritsHorn
+<style=cMono>Translated desert merchant's ledger.</style>
+
+Item: Horn, curved, red, still warm. Source: claimed to be from a great fire-spirit slain in the dunes. Seller: wild-eyed, burned.
+
+Asked price: three camels. Paid: one camel and a promise not to ask where he got it.
+
+Note: when the horn's bearer strikes a foe, the air sometimes ignites around them in a great burst of heat. Note: the tent is now gone. Note: I am selling the horn tomorrow.
+
+## ScorchingShell
+<style=cMono>Lab dissection analysis, Specimen MC-3.</style>
+
+Fragment of carapace from a massive magma-dwelling worm. The fragment's inner surface remains hot to the touch and has not cooled in the four months since collection.
+
+When worn as armor, it does not protect much. But anything that strikes the wearer is singed, and anything the wearer strikes is set alight.
+
+The lab has requested a dedicated fire suppression system for this specimen. The request is pending. The lab is on fire.
+
+## RottenBrain
+<style=cMono>Customer complaint, Bio-Supply Co.</style>
+
+To whom it may concern:
+
+I ordered a preserved neural specimen for my anatomy class. What arrived was a brain, yes, but it is neither preserved nor, as far as I can tell, dead.
+
+When I tossed it into the disposal it bounced out. When I threw it at the wall, it bounced six times and left six craters. My students are terrified. One of them is now very good at dodgeball.
+
+Please advise. Please do not send a replacement.
+
+## SafeguardLantern
+<style=cMono>Shepherd's song, transcribed from a recording, Highland Colony.</style>
+
+Light the lamp, the night is long,
+Hang it high and sing this song;
+What the dark sends to the fold,
+Let the burning flame take hold.
+
+[Spoken, at the end:] My grandmother used that lantern every night on the hills. The wolves wouldn't come near it. The ones that tried ran off yelping with their tails smoking. She said the flame remembered every wolf it ever met.
+
+## Snowglobe
+<style=cMono>Order: "Souvenir Snowglobe (Rallypoint Delta)"
+Tracking Number: 33******
+Estimated Delivery: 12/24/2056
+Shipping Method: Holiday Express
+Shipping Address: Home, Earth
+Shipping Details:</style>
+
+Merry Christmas, kiddo! Your old man found you a little piece of the frozen station I'm posted at. It's beautiful here, mostly. Very cold.
+
+Give it a good shake and watch the snow come down. Funny thing — when I shook it in the barracks, the whole room got colder and the sergeant's coffee froze in his mug.
+
+Don't shake it near the cat. Love you. Home soon.
+
+## ExplorersKey
+<style=cMono>Audio transcription, Excavation Site 4.</style>
+
+"Every lock on the planet. That's what she claimed it could open."
+
+"And?"
+
+"Tried it on the supply crates. Opened. Tried it on the old vault doors. Opened. Tried it on the chest in the temple ruins that's been sealed since before our ancestors were born."
+
+"And?"
+
+"Opened. And every other chest in the room opened with it."
+
+"So now what?"
+
+"Now I don't think she was exaggerating. And I think we should find out who else wants this key."
+
+## InstantMinefield
+<style=cMono>Field manual, Area Denial Kit "Carpet."</style>
+
+Deploy the kit by pulling the red tab and dropping the canister at your feet. Within seconds, a field of pressure-sensitive mines will scatter around you.
+
+Retreat carefully. The mines are friend-or-foe tagged, but the friend tag is not perfect. Personnel are advised not to test it.
+
+Field note from Sgt. Lowe: "Dropped it in the middle of a beetle rush. Haven't seen that many legs in the air since the dance recital."
+
+## CarraraMarble
+<style=cMono>Translated temple inscription, the Marble Steps.</style>
+
+Carved from a single block of the white stone, the gate binds the place where it is set to the one who set it.
+
+The traveler may wander as far as they wish. When they are ready to return, they need only call to the stone. The gate will remember them, and the distance will fold.
+
+The masons who made it carved a warning on the base: the stone remembers only one place at a time. Choose it wisely.
+
+## ShatteredMirror
+<style=cMono>Personal log, unknown author, found beside a broken mirror.</style>
+
+I dropped it. The glass split in a perfect star.
+
+When I looked into the pieces, my reflection didn't follow me. It stepped out.
+
+It looks like me. It moves like me. It carries everything I carry. It fought beside me for a little while, then it faded, and the pieces of glass went dark.
+
+They grow bright again in time. I'm a little afraid of what happens if I ever look into them and nothing steps out.
+
+## GoldPlatedBomb
+<style=cMono>Order: "Commemorative Ordnance (Gilded)"
+Tracking Number: 444*****
+Estimated Delivery: 01/01/2057
+Shipping Method: Armored Courier
+Shipping Address: Office of the Treasury, Penthouse Level
+Shipping Details:</style>
+
+You said you wanted to see your money "make an impact."
+
+This device converts a fixed portion of the holder's liquid assets directly into explosive yield. The more you have, the louder it is.
+
+Please note: the conversion is not reversible. Our legal team would like to remind you that the explosion is not tax deductible. Our legal team has asked us to stop shipping these.
+
+## DynamitePlunger
+<style=cMono>Audio transcription, Quarry Site Gamma.</style>
+
+"Every time you hit something with the pick, drop a stick. Just leave 'em lying where they fall."
+
+"That seems unsafe."
+
+"Then when you've dropped enough of 'em, push the plunger."
+
+"What happens then?"
+
+"Everything you hit today gets one more surprise."
+
+"That definitely seems unsafe."
+
+"You want unsafe, wait till you see the quarry after."
+
+## MaceReplica
+<style=cMono>Museum placard, Hall of Old Arms.</style>
+
+REPLICA. The original mace, carried by the warrior-king Ostrach into the battle of the Shattered Plains, was lost at sea.
+
+This replica was commissioned for the museum's opening and is accurate to the original in every detail. Including, it seems, the weight, which is enough to knock down most visitors who attempt to lift it.
+
+Visitors are asked not to swing the replica. Visitors are especially asked not to swing it at the other exhibits. The museum has already had to replace the knight.
+
+## CrudelyDrawnBuddy
+<style=cMono>Note taped to a cardboard figure.</style>
+
+THIS IS MR. BUDDY.
+
+MR. BUDDY IS YOUR FRIEND. EVERYONE WANTS TO HIT MR. BUDDY. THAT IS OKAY. MR. BUDDY DOES NOT MIND.
+
+WHEN MR. BUDDY GETS TIRED OF BEING HIT, MR. BUDDY GOES BOOM.
+
+PLEASE DO NOT STAND NEAR MR. BUDDY WHEN HE GOES BOOM.
+
+(drawn by Lily, age 7, with help from Dad's demolition kit)
+
+## ShieldGenerator
+<style=cMono>Engineering notes, Personal Barrier Projector Mk. VI.</style>
+
+On activation, the projector wraps the user in a field that blocks all incoming harm for a short time. Bullets, claws, lava, falling debris: everything.
+
+The projector draws enormous power and cannot sustain the field for long. Recharge time is significant. Use it like you mean it.
+
+Field testers report that the "everything" also includes high-fives. We are working on a patch.
+
+## UnstableWatch
+<style=cMono>Pawn shop ledger, Lower Docks.</style>
+
+Item: Pocket watch, brass, cracked face. Seller said it "belonged to a time traveler." Paid: four coins.
+
+Note: whenever I wind it, everything in the shop goes still for a few seconds. The clocks stop. The flies stop. My cat stops mid-yawn. I'm the only thing still moving.
+
+Price raised to forty coins. Then to four hundred. Then I took it off the shelf. I've decided I'm going to keep it for myself.
+
+## PillagedGold
+<style=cMono>Ship's log, the "Laughing Gull."</style>
+
+Took the merchant vessel off the coast at dawn. Captain's cabin held a single chest of gold coins, very old, stamped with a crown nobody recognizes.
+
+The crew noticed that for a little while after holding a coin, every blow they struck put more gold in their pockets. I have not seen men fight harder in my life.
+
+The coins tarnish after an hour. The crew is getting greedy. I'm locking the chest in my cabin and sleeping with one eye open.
+
+## CaptainsBrooch
+<style=cMono>Ship's quartermaster, inventory note.</style>
+
+Item: Brooch, gold and enamel, belonging to the Captain. Do not touch.
+
+The Captain uses it to call down supply crates from orbit when the crew is in trouble. Pressing the center gem sends a signal to a satellite that, as far as I know, nobody has ever seen.
+
+Note: the crates are never free. A charge always appears on the ship's account afterward. Nobody knows who sends the bill. The Captain pays it without complaint.
+
+## SuperMassiveLeech
+<style=cMono>Lab dissection analysis, Specimen HL-4.</style>
+
+A parasite the size of a forearm, recovered from a deep-sea trench. When attached to a host, it feeds on every wound the host inflicts on others and returns a fraction of that vitality to the host.
+
+The parasite is not permanent. It feeds furiously for a short time, then detaches and goes dormant until it recovers.
+
+Volunteers for the next trial are asked to sign the attached waiver. Volunteers are asked not to name the specimen. Volunteers have already named the specimen "Gerald."
+
+## NematocystNozzle
+<style=cMono>Lab notes, Marine Bio-Weapons Division.</style>
+
+The nozzle is grown, not built. Its inner chamber holds thousands of tiny stinging cells harvested from a deep-ocean organism.
+
+When squeezed, the nozzle fires a spray of the stingers outward. They seek the nearest moving thing and bury themselves in it.
+
+Note: the organism was not happy about the harvest. We are requesting a bigger tank. We are requesting the old tank be repaired. We are requesting several new interns.

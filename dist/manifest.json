@@ -1,0 +1,21 @@
+{
+  "name": "ror2_plus",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/ASDFboy/ror2-plus",
+  "description": "Every Risk of Rain 1 and Returns item missing from RoR2, with unlocks, void versions and a lunar rework. Built on ClassicItemsReturns.",
+  "dependencies": [
+    "bbepis-BepInExPack-5.4.2120",
+    "RiskofThunder-R2API_Core-5.2.0",
+    "RiskofThunder-R2API_RecalculateStats-1.5.0",
+    "RiskofThunder-R2API_Sound-1.0.3",
+    "RiskofThunder-R2API_Dot-1.0.2",
+    "RiskofThunder-R2API_Items-1.0.4",
+    "RiskofThunder-R2API_Prefab-1.0.4",
+    "RiskofThunder-R2API_Elites-1.0.4",
+    "RiskofThunder-R2API_Language-1.0.1",
+    "RiskofThunder-R2API_DamageType-1.1.7",
+    "RiskofThunder-R2API_Orb-1.0.1",
+    "Smooth_Salad-ShaderSwapper-1.0.1",
+    "Risky_Lives-SneedHooks-1.0.2"
+  ]
+}

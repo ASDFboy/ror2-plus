@@ -1,0 +1,20 @@
+# Game, BepInEx and R2API DLLs are not ours to redistribute; see README to set libs/ up locally
+libs/
+# Build output
+bin/
+obj/
+out/
+build/
+tools/**/bin/
+tools/**/obj/
+dist/plugins/ror2-plus/ror2-plus.dll
+dist/plugins/ror2-plus/models/
+# Data extracted from the game for study only
+reference/vanilla/
+reference/addressables.txt
+reference/sound_events.txt
+reference/itemdefs_dlc.json
+# Misc
+__pycache__/
+*.pyc
+.DS_Store
