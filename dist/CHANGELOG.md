@@ -21,3 +21,4 @@
 - Renamed to ror2-plus.
 - ror2-plus is now a game expansion: it has its own emblem and an on/off switch in the lobby's Expansions row, like the official DLCs.
 - Every unlock has its own challenge icon, painted in the same style as the base game's item unlocks.
+- Art pass on the weakest icons and models: Legendary Spark, Plasma Chain, Toxic Centipede, Dead Man's Foot, Panic Mines and Super Massive Leech were rebuilt, and 13 thin void items got solid, readable shapes (Crowbar, Feather, Leeching Seed, Red Whip, Harvester's Scythe, Hunter's Harpoon, Luminous Shot, Ceremonial Dagger, Noxious Thorn, Sentient Meat Hook, Symbiotic Scorpion, Electric Boomerang, Unstable Transmitter). Unstable Watch and Crudely-Drawn Buddy models were made sturdier.
