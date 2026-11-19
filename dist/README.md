@@ -136,5 +136,5 @@ Useful switches under General: `Require Unlocks`, `Enable Void Items`, `Use 3d M
 - Glass parts of models (vials, the snow globe's dome) are left off the 3D pickups.
 
 ## Credits
-- New items, icons and code: ASDFboy and Claude
+- New items, icons and code: ASDFboy
 - ClassicItemsReturns (base mod, models, sounds): DestroyedClone, Moffein and contributors

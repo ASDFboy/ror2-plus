@@ -52,7 +52,7 @@ You need the .NET SDK (8 or newer), and the game's DLLs in `libs/`. They aren't 
 | `docs/` | The project page (GitHub Pages), built by `tools/make_site.py`. |
 
 ## Credits
-- **ror2-plus:** ASDFboy and Claude.
+- **ror2-plus:** ASDFboy.
 - **ClassicItemsReturns**, the base this is built on, including its models, sounds and translations: DestroyedClone, Moffein and contributors. Used with their permission.
 - Item concepts come from Risk of Rain and Risk of Rain Returns by Hopoo Games. This project isn't affiliated with Hopoo Games or Gearbox.
 
